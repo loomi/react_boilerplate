@@ -1,1 +1,98 @@
-# react_boilerplate
+
+# Cidade Legal - Client
+
+[![loomi](https://i.imgur.com/vTJZSja.png)](http://loomi.com.br)
+
+Client code for the _'Cidade Legal'_ project.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+You must have NodeJS installed on your computer to run this project. For that, visit [nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+### Installing
+
+Clone the GitHub repository
+
+```
+git clone https://github.com/loomi/cidade-legal-client.git
+```
+Enter the react project folder
+
+```
+cd cidade-legal-client
+```
+
+Install and start the npm project
+
+```
+yarn install
+yarn start
+```
+
+Now, you can see the app running at [localhost:3000](http://localhost:3000)
+
+
+## Running the project
+
+To run the project (if already installed), just follow this simple commands:
+
+```
+yarn start
+```
+
+## Built With
+
+* **React** - _for front-end_.
+
+## Deployment
+
+The React code is deployed with CD of branch develop and branch/PR previews on [Netlify](https://www.netlify.com/)
+
+Development app: <https://cidade-legal.netlify.app/>
+
+## GitHub
+
+### Branches
+They can be:
++ master
++ develop
++ feature
++ fix
+
+Their names must follow this template: `feature/branch-name`
+
+### Commits
+Must begin with the name of the branch you developed on, following the model: _"feature/name-of-feature rest of commit…"._
+
+Must be simple and show briefly what you just did.
+
+Ex: `git commit -m "feature/banner-parallax Added the parallax effect to the background"`
+
+### Pull Requests
+First, proceed with _rebase_:
+1. _commit_ the changes on your branch
+2. Go to the original branch (develop ou master) with `git checkout develop` (or master)
+3. Run `git pull`
+4. Go back to your branch with `git checkout "your-branch"`
+5. Run `git rebase develop` (or master)
+6. Follow the steps to conclude the _rebase_, solving conflicts and running `git add .` and then `git rebase --continue`
+7. Whan finished rebasing, run `git push -f origin "your-branch"`. Now your Pull Request can be opened on GitHub.
+
+If possible, use this template for the pull request body:
+
+```
+### Issue Name
+**What I did:**
+
+- First thing I did...
+
+- Second thing I did...
+
+**How to test:**
+
+- Brief notes on how to check if the feature works correctly.
+```

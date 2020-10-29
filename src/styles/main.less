@@ -1,0 +1,250 @@
+/**
+ * External resources 
+ */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Source+Sans+Pro:ital@1&display=swap");
+
+/**
+ * Ant Design styles
+ */
+ @import "~antd/dist/antd.less";
+
+ 
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  color: '#2C3E50';
+}
+body, button {
+  font-family: 'Nunito', sans-serif;
+}
+#root {
+  margin: 0 0;
+  min-height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+
+// Layout
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+// Inputs
+.ant-input,
+.ant-input-affix-wrapper {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  border-bottom-width: 2px;
+}
+
+.modal-create .ant-input-affix-wrapper {
+  background-color: #2B5740;
+}
+
+.modal-create .ant-input {
+  background-color: #2B5740;
+  color: white;
+}
+
+.instrument-picker .ant-picker-input input {
+  color: white !important;
+  width: 100vw;
+}
+
+.instrument-picker .ant-picker-input ::placeholder {
+  color: white !important;
+  opacity: 0.8;
+}
+.instrument-picker-edit .ant-picker-input input {
+  color: black !important;
+  width: 100vw;
+}
+
+.instrument-picker-edit .ant-picker-input ::placeholder {
+  color: black !important;
+  opacity: 0.8;
+}
+
+.ant-input-search-icon::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  border-left: none;
+  transition: all 0.3s;
+  content: "";
+}
+
+.ant-radio-button {
+  &-wrapper,
+  &-wrapper:first-child,
+  &-wrapper:last-child {
+    border-radius: 9px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-width: 1px;
+
+    &::before {
+      display: none !important;
+    }
+  }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black !important;
+}
+
+.ant-form-item-label label {
+  margin-left: 11px !important;
+}
+
+.modal-create .ant-radio-button {
+  border: 1px solid white;
+  border-radius: 9px;
+  background-color: #2B5740;
+  color: white;
+  z-index: -1;
+}
+
+.instrument-radio .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #333!important;
+  opacity: 100%!important;
+  outline: none!important;
+}
+.instrument-radio .ant-radio-button-wrapper {
+  height: 25px!important;
+  outline: none!important;
+}
+
+.instrument-radio .ant-radio-button-wrapper .ant-radio-button-wrapper:focus {
+  outline: none!important;
+  text-decoration: none;
+}
+
+.instrument-radio .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+  box-shadow: none!important;
+}
+
+.modal-edit .ant-radio-button {
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: white;
+  color: black;
+  z-index: -1;
+}
+
+.modal-edit .ant-radio-button-wrapper > span:nth-child(2) {
+  color: black;
+  font-size: 1.1em;
+}
+
+.modal-create .ant-radio-button-wrapper > span:nth-child(2) {
+  color: white;
+  font-size: 1.1em;
+}
+
+.modal-create .ant-radio-button-wrapper {
+  background-color: #2B5740;
+}
+
+.modal-create .ant-form-item-label label {
+  color: white;
+  font-size: 1.2em;
+}
+
+.modal-create .ant-radio-button-checked {
+  border: 3px solid white;
+}
+
+::placeholder {
+  color: black !important;
+  opacity: 0.4;
+}
+
+.ant-input-number-input {
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #dfdfe0;
+  border-left: none;
+}
+
+//Data display
+.ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow,
+.ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow,
+.ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow {
+  bottom: 6.2px;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+.ant-popover-inner-content {
+  padding: 0 1em 0.25em;
+  color: #1a1a1a;
+}
+
+.ant-table-body {
+  min-height: 68vh!important;
+}
+
+.ant-table-thead .ant-table-cell {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ant-table-title {
+  background-color: rgb(240, 241, 245);
+}
+
+//Feedback
+.modal-create .ant-modal-content {
+  background-color: #2B5740;
+}
+
+.modal-create .ant-card {
+  background-color: white;
+}
+
+.ant-modal-header {
+  // background-image: url("../assets/path_68.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border: 0;
+}
+
+.modal-create .ant-modal-header {
+  background-color: #2B5740;
+  // background-image: url("../assets/path_68_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border: 0;
+}
+
+.modal-create .ant-modal-footer {
+  border: 0;
+}
+
+.modal-create .ant-modal-close {
+  color: white;
+}
+
+.modal-create .ant-modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 2em;
+}
