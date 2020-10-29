@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import colors from 'styles/colors';
-import { ReactComponent as CidadeLegalLogo } from 'assets/logo.svg';
+import { ReactComponent as Logo } from 'assets/logo.svg';
 
 const brandColors = {
   default: colors.primary,
@@ -10,7 +10,7 @@ const brandColors = {
   dark: colors.black,
 };
 
-const Logo = styled(CidadeLegalLogo)`
+const Logo = styled(Logo)`
   ${({ size }) => css`
     width: ${size || '4rem'};
     height: ${size || '4rem'};
