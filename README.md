@@ -1,9 +1,9 @@
 
-# Cidade Legal - Client
+# React Boilerplate
 
 [![loomi](https://i.imgur.com/vTJZSja.png)](http://loomi.com.br)
 
-Client code for the _'Cidade Legal'_ project.
+React boilerplate project.
 
 ## Getting Started
 
@@ -18,12 +18,12 @@ You must have NodeJS installed on your computer to run this project. For that, v
 Clone the GitHub repository
 
 ```
-git clone https://github.com/loomi/cidade-legal-client.git
+git clone https://github.com/loomi/react_boilerplate
 ```
 Enter the react project folder
 
 ```
-cd cidade-legal-client
+cd react_boilerplate
 ```
 
 Install and start the npm project
@@ -48,17 +48,11 @@ yarn start
 
 * **React** - _for front-end_.
 
-## Deployment
-
-The React code is deployed with CD of branch develop and branch/PR previews on [Netlify](https://www.netlify.com/)
-
-Development app: <https://cidade-legal.netlify.app/>
-
 ## GitHub
 
 ### Branches
 They can be:
-+ master
++ main
 + develop
 + feature
 + fix
