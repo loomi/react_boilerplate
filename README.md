@@ -3,7 +3,7 @@
 
 [![loomi](https://i.imgur.com/vTJZSja.png)](http://loomi.com.br)
 
-React boilerplate project.
+React boilerplate project. Changed Readme.
 
 ## Getting Started
 
