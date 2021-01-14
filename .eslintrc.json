@@ -35,7 +35,7 @@
     "rules": {
         "prettier/prettier": "error",
         "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/exhaustive-deps": "off",
         "linebreak-style": "off",
         "react/prop-types": "off",
         "react/jsx-props-no-spreading": "off",
