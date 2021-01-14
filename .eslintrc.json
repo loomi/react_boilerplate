@@ -11,8 +11,9 @@
         }
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier",
+        "plugin:react/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -28,9 +29,11 @@
     },
     "plugins": [
         "react",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "linebreak-style": "off",
