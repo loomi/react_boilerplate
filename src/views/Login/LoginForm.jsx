@@ -3,8 +3,8 @@ import { Form } from 'formik';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
-import Spacer from 'components/Spacer';
-import Paragraph from 'components/Paragraph';
+import { StyledParagraph, StyledSpacer } from './LoginForm.style';
+
 import TextField from 'components/inputs/TextField';
 import PasswordField from 'components/inputs/PasswordField';
 import validator, { email, Yup } from 'helpers/validator';
@@ -15,13 +15,13 @@ function LoginForm({ isSubmitting }) {
       <TextField name="email" label="E-mail" autocomplete="off" />
       <PasswordField name="password" label="Senha" />
 
-      <Paragraph mt={4} textAlign="center">
+      <StyledParagraph>
         <Link to="/password-recovery">
           Esqueci minha senha
         </Link>
-      </Paragraph>
+      </StyledParagraph>
 
-      <Spacer mt={2} />
+      <StyledSpacer />
 
       <Button
         block

@@ -1,5 +1,4 @@
 import styled, { keyframes, css } from 'styled-components';
-import { space } from 'styled-system';
 import ButtonBase from './ButtonBase';
 
 const suffixIconAnimation = keyframes`
@@ -40,7 +39,6 @@ export const ButtonStyled = styled(ButtonBase)`
   background-color: ${({ btnType, theme }) => theme.btnTypes[btnType][0]};
     color: ${({ btnType, theme }) => theme.btnTypes[btnType][1]};
   `}
-  ${space}
   
   :hover {
     ${(props) => props.btnType && css`
