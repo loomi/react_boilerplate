@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from 'styles/colors';
 import { ToastContainer } from 'react-toastify';
 import { Divider } from 'antd';
 import Paragraph from 'components/Paragraph';
@@ -52,7 +53,7 @@ export const StyledMessageContainer = styled.div`
   width: 100%;
 `;
 export const StyledTitle = styled(Paragraph)`
-  color: ${(props) => (props.error ? '#CB6969' : '#558B2F')};
+  color: ${(props) => (props.error ? colors.roseRed : colors.grassGreen)};
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.64px;
@@ -65,7 +66,7 @@ export const StyledDivider = styled(Divider)`
 `;
 
 export const StyledText = styled(Paragraph)`
-  color: #595F6E;
+  color: ${colors.grayBlue};
   letter-spacing: 0.64px;
 `;
 

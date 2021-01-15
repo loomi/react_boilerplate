@@ -34,19 +34,17 @@ export const showToast = ({
   )
 );
 
-function Toast() {
-  return (
-    <StyledToast
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-    />
-  );
-}
+const Toast = () => (
+  <StyledToast
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+  />
+);
 
 export default Toast;

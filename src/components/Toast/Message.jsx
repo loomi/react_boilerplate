@@ -1,31 +1,28 @@
 import React from 'react';
 
-import Styled from './Toast.styled';
+import {
+  StyledMessageRow,
+  StyledMessageContainer,
+  StyledTitle,
+  StyledDivider,
+  StyledText
+} from './Toast.styled';
 
-const {
-  MessageRow,
-  MessageContainer,
-  Title,
-  Divider,
-  Text,
-} = Styled;
-
-function Message(props) {
-  const {
-    title,
-    text,
-    error,
-    children,
-  } = props;
+const Message = ({
+  title,
+  text,
+  error,
+  children
+})  => {
   return (
-    <MessageRow>
-      <MessageContainer>
-        <Title error={error}>{title}</Title>
-        <Divider />
-        <Text>{text}</Text>
+    <StyledMessageRow>
+      <StyledMessageContainer>
+        <StyledTitle error={error}>{title}</StyledTitle>
+        <StyledDivider />
+        <StyledText>{text}</StyledText>
         {children}
-      </MessageContainer>
-    </MessageRow>
+      </StyledMessageContainer>
+    </StyledMessageRow>
   );
 }
 
