@@ -19,4 +19,7 @@ module.exports = ({
   darkGray: '#E9EAF2',
   lightGray: '#F7F8FA',
   salmon: '#F5C1A7',
+  roseRed: '#CB6969',
+  grassGreen: '#558B2F', 
+  grayBlue: '#595F6E', 
 });
