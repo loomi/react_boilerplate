@@ -1,5 +1,4 @@
 import { Typography } from 'antd';
-import { space, fontSize } from 'styled-system';
 import styled from 'styled-components';
 
 export const StyledPageSubtitle = styled(Typography.Text)`
@@ -14,9 +13,6 @@ export const StyledPageSubtitle = styled(Typography.Text)`
     margin-left: ${({ theme }) => `${theme.space[5]}px`};
     background: ${({ color, theme }) => (theme.colors[color] || color)};
   }
-
-  ${space}
-  ${fontSize}
 `;
 
 StyledPageSubtitle.defaultProps = {
