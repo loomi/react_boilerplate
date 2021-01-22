@@ -5,10 +5,6 @@
 
 React boilerplate project. Changed Readme.
 
-<a href="https://codeclimate.com/github/loomi/react_boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/517c21777cc4fff246fe/maintainability" /></a>
-
-<a href="https://codeclimate.com/github/loomi/react_boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/517c21777cc4fff246fe/test_coverage" /></a>
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
