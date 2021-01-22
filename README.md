@@ -51,42 +51,42 @@ yarn start
 ## GitHub
 
 ### Branches
-They can be:
-+ main
-+ develop
-+ feature
-+ fix
 
-Their names must follow this template: `feature/branch-name`
+The branch name must follow the structure: `<type>/<scope>`
+
+**Possible types:**
+
+1. **feature**: are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment. When starting development, the deployment in which this feature will be released may not be known;
+2. **fix**: differ from feature branches only semantically. They will be created when there is a bug on the live site that should be fixed and merged into the next deployment. For that reason, a bug branch typically will not last longer than one deployment cycle;
+3. **upgrade**: comes from the need to act upon an undesired state of a live production version. Additionally, sometimes, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment. Due to these requirements, a upgrade branch is always branched from a tagged stable branch.
+
+**Scope:** Name of functionality or enhancement, based on the issue. Can have up to three words, in lower case, with a hyphen as the word separator.
 
 ### Commits
-Must begin with the name of the branch you developed on, following the model: _"feature/name-of-feature rest of commit…"._
 
-Must be simple and show briefly what you just did.
+The commit name must follow the structure: `<branch type>(<branch scope>): <message>`
 
-Ex: `git commit -m "feature/banner-parallax Added the parallax effect to the background"`
+**Message:** should be clear and meaningful. Lowercase, short (50 chars or less) summary, using imperative, like "fix bug" and not "fixed bug" or "fixes bug" - this convention matches up with commit messages generated
+by commands like `git merge` and `git revert`.
 
 ### Pull Requests
-First, proceed with _rebase_:
-1. _commit_ the changes on your branch
-2. Go to the original branch (develop ou master) with `git checkout develop` (or master)
-3. Run `git pull`
-4. Go back to your branch with `git checkout "your-branch"`
-5. Run `git rebase develop` (or master)
-6. Follow the steps to conclude the _rebase_, solving conflicts and running `git add .` and then `git rebase --continue`
-7. Whan finished rebasing, run `git push -f origin "your-branch"`. Now your Pull Request can be opened on GitHub.
 
-If possible, use this template for the pull request body:
+**Name**: Branch name
 
-```
-### Issue Name
-**What I did:**
+**Body**: Use this template:
 
-- First thing I did...
+```markdown
+**Feature**
 
-- Second thing I did...
+***What I did:***
 
-**How to test:**
+- <thing I’ve done>
+   - <detailing>
+---
+***How to test:***
 
-- Brief notes on how to check if the feature works correctly.
+1. In your browser go to [http://localhost:3000/](http://localhost:3000/)
+2. Check if the component/view looks just like the [mockup](<mockup link>) in different screen sizes (width between 1024px and 1920px)
+3. <issue specific action test>
+4. Test the things that you think are worth testing, even the ones that are not in this description
 ```
