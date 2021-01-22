@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 
-import LayoutAuth from 'components/LayoutAuth';
+import Components from 'components/index';
 import { useAuth } from 'contexts/AuthProvider';
 import { ALERT_SERVER_ERROR } from 'variables';
 import LoginForm, { loginFormValidationSchema } from './LoginForm';
@@ -45,7 +45,7 @@ function Login() {
   };
 
   return (
-    <LayoutAuth
+    <Components.LayoutAuth
       title="Entrar na plataforma"
       feedback={feedback}
     >
@@ -55,7 +55,7 @@ function Login() {
         initialValues={{ email: '', password: '' }}
         validationSchema={loginFormValidationSchema}
       />
-    </LayoutAuth>
+    </ Components.LayoutAuth>
   );
 }
 
